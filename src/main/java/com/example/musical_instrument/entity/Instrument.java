@@ -19,10 +19,10 @@ public class Instrument {
     @GeneratedValue(generator = "instrument_seq_gen", strategy = GenerationType.SEQUENCE)
     private Integer instrument_id;
 
-    @Column(name ="Instrument_name", nullable = false)
+    @Column(name ="instrument_name", nullable = false)
     private String instrument_name;
 
-    @Column(name = "Instrument_price", nullable = false)
+    @Column(name = "instrument_price", nullable = false)
     private String instrument_price;
 
     @ManyToOne(fetch = FetchType.LAZY)

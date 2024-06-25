@@ -1,4 +1,4 @@
 package com.example.musical_instrument.repository;
 
-public class InstrumentRepository {
+public interface InstrumentRepository {
 }

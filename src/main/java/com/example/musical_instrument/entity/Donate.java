@@ -22,4 +22,11 @@ public class Donate {
     @JoinColumn(name = "instrument_id", referencedColumnName = "instrument_id",
             foreignKey = @ForeignKey(name="pk_id_fk_instrument_id")) // Updated referencedColumnName to match the primary key field name.
     private Instrument instrument;
+
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", referencedColumnName = "user_id",
+            foreignKey = @ForeignKey(name = "pk_id_fk_user_id"))
+    private User user;
 }
+
