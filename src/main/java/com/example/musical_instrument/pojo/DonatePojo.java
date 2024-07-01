@@ -10,7 +10,6 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DonatePojo {
-
     private Integer donate_id;
     private Integer instrument_id;
     private Integer user_id;
